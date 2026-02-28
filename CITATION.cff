@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: edge-llm-systems-lab
+authors:
+  - family-names: Antonini
+    given-names: Fabio
+year: 2026
+license: MIT
