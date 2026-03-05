@@ -1,23 +1,12 @@
 services:
-  ollama:
-    image: ollama/ollama
-    container_name: ollama_server
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama:/root/.ollama
-
   lab:
     build: .
     container_name: edge_llm_lab
-    depends_on:
-      - ollama
     ports:
       - "8888:8888"
     volumes:
       - .:/workspace
     environment:
-      - OLLAMA_BASE_URL=http://ollama:11434
-
-volumes:
-  ollama:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,3 @@
+{"model": "llama3.2:3b", "prompt": "Explain attention in transformers in 6 sentences.", "n_runs": 3, "lat_mean_s": 3.9780871073404946, "lat_min_s": 1.579620599746704, "lat_max_s": 8.418169736862183}
+{"model": "llama3.2:3b", "prompt": "Summarize gradient descent in 5 bullet points.", "n_runs": 3, "lat_mean_s": 2.905423084894816, "lat_min_s": 2.6646974086761475, "lat_max_s": 3.1455867290496826}
+{"model": "llama3.2:3b", "prompt": "Write a Python function to compute factorial.", "n_runs": 3, "lat_mean_s": 1.3894734382629395, "lat_min_s": 1.187138319015503, "lat_max_s": 1.5846309661865234}

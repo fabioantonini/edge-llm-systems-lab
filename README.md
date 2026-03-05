@@ -1,40 +1,109 @@
-# edge-llm-systems-lab
 
-An **introductory, research-aware** lab for PhD students covering:
+# Edge LLM Systems Lab
 
-- Local LLM inference on CPU with **Ollama**
-- Python integration via REST APIs
-- RAG with embeddings + vector DB (Chroma)
-- Benchmarking & profiling
-- Intro quantization benchmarking
-- A minimal experiment harness with JSONL logs
+An introductory **Edge AI / Local LLM laboratory** for PhD students.
 
-## Quick start (Docker)
+This repository demonstrates how to run **Large Language Models locally on CPU** using **Ollama**, and how to integrate them programmatically in Python for research workflows.
 
-```bash
+Topics covered:
+
+- Local LLM inference on CPU
+- Ollama REST API integration
+- Retrieval Augmented Generation (RAG)
+- Vector databases (ChromaDB)
+- LLM benchmarking and profiling
+- Quantization exploration
+- Research experiment logging
+
+---
+
+# Architecture
+
+Ollama runs **on the host machine**.
+
+Docker is used only to provide a reproducible Python + Jupyter environment.
+
+Host
+ └── Ollama (localhost:11434)
+
+Docker container
+ └── Jupyter Lab
+       └── Python notebooks
+             ↓
+       http://host.docker.internal:11434
+
+---
+
+# Prerequisites
+
+Install Ollama on your host machine:
+
+https://ollama.com
+
+Start Ollama:
+
+```
+ollama serve
+```
+
+Pull a model:
+
+```
+ollama pull llama3.2:3b
+```
+
+---
+
+# Run the Lab
+
+Start the environment:
+
+```
 docker compose up --build
 ```
 
-Open JupyterLab: http://localhost:8888
+Open JupyterLab:
 
-Pull a model (first time only):
-
-```bash
-docker exec -it ollama_server ollama pull llama3.2:3b
+```
+http://localhost:8888
 ```
 
-## Notebook roadmap
+---
 
-1. `01_Local_LLM_Introduction.ipynb`
-2. `02_API_Integration.ipynb`
-3. `03_RAG_With_Embeddings_Chroma.ipynb`
-4. `04_Benchmarking_and_Profiling.ipynb`
-5. `05_Quantization_Analysis.ipynb`
-6. `06_Research_Experiments.ipynb`
-7. `07_Quiz_Hidden_Answers.ipynb`
+# Notebooks
 
-## Slides
+1. Local LLM introduction
+2. API integration with Ollama
+3. Retrieval Augmented Generation (RAG)
+4. Benchmarking and profiling
+5. Quantization analysis
+6. Research experiments
+7. Quiz
 
-- `slides/Ollama_Tutorial_Advanced_Slides.pptx`
+---
+
+# Requirements
+
+The Docker environment includes:
+
+- sentence-transformers
+- chromadb
+- requests
+- numpy
+- psutil
+
+---
+
+# Educational goals
+
+This lab teaches:
+
+- running LLMs locally
+- integrating LLM APIs in Python
+- building a simple RAG system
+- measuring inference performance
+- experimenting with local AI infrastructure
+
+---
 
 © 2026

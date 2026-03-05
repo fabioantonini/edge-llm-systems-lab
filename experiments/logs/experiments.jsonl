@@ -1,0 +1,9 @@
+{"ts": 1772715847.6552055, "model": "llama3.2:3b", "temperature": 0.0, "prompt": "Explain RAG in a systems perspective.", "latency_s": 6.55647349357605, "output_chars": 3285}
+{"ts": 1772715850.1280305, "model": "llama3.2:3b", "temperature": 0.0, "prompt": "Give a short comparison: local inference vs cloud inference.", "latency_s": 2.4726359844207764, "output_chars": 1302}
+{"ts": 1772715854.7079403, "model": "llama3.2:3b", "temperature": 0.0, "prompt": "Write pseudocode for SGD.", "latency_s": 4.57973575592041, "output_chars": 1911}
+{"ts": 1772715860.8076355, "model": "llama3.2:3b", "temperature": 0.2, "prompt": "Explain RAG in a systems perspective.", "latency_s": 6.099462509155273, "output_chars": 3389}
+{"ts": 1772715863.0288334, "model": "llama3.2:3b", "temperature": 0.2, "prompt": "Give a short comparison: local inference vs cloud inference.", "latency_s": 2.2209126949310303, "output_chars": 1193}
+{"ts": 1772715866.5556958, "model": "llama3.2:3b", "temperature": 0.2, "prompt": "Write pseudocode for SGD.", "latency_s": 3.526700735092163, "output_chars": 1469}
+{"ts": 1772715872.5766826, "model": "llama3.2:3b", "temperature": 0.8, "prompt": "Explain RAG in a systems perspective.", "latency_s": 6.020831108093262, "output_chars": 3195}
+{"ts": 1772715874.9862256, "model": "llama3.2:3b", "temperature": 0.8, "prompt": "Give a short comparison: local inference vs cloud inference.", "latency_s": 2.4093496799468994, "output_chars": 1208}
+{"ts": 1772715878.6693, "model": "llama3.2:3b", "temperature": 0.8, "prompt": "Write pseudocode for SGD.", "latency_s": 3.6829161643981934, "output_chars": 1652}
