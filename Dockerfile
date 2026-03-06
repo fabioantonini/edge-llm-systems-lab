@@ -19,7 +19,6 @@ RUN pip install --no-cache-dir jupyterlab==4.1.5
 # copia i notebook dentro l'immagine
 COPY notebooks /workspace/notebooks
 COPY datasets /workspace/datasets
-COPY src /workspace/src
 
 EXPOSE 8888
 
