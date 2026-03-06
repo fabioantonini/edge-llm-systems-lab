@@ -1,14 +1,10 @@
 services:
   lab:
     build: .
-    image: fabioantonini/edge-llm-systems-lab:latest
     container_name: edge_llm_lab
-
     ports:
-      - "8890:8890"
-
+      - "8888:8888"
     environment:
       - OLLAMA_BASE_URL=http://host.docker.internal:11434
-
     extra_hosts:
       - "host.docker.internal:host-gateway"
