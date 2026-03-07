@@ -113,6 +113,21 @@ This lab teaches:
 
 ---
 
+
+# Further Reading
+
+Additional materials available in the `slides/` directory:
+
+| File | Description |
+|---|---|
+| `slides/Local_LLMs_and_RAG_Research_Article.pdf` | Research article (~40 min) on local LLMs and RAG — recommended before notebook 03 |
+| `slides/Ollama_Tutorial_Advanced_Slides.pptx` | Advanced Ollama tutorial slides: API, model management, performance tuning |
+
+Companion guides for each notebook are in [`docs/`](docs/README.md).
+A glossary of key terms (RAG, embedding, quantization, temperature...) is in [`docs/GLOSSARY.md`](docs/GLOSSARY.md).
+
+---
+
 # Roadmap
 
 See [ROADMAP.md](ROADMAP.md) for the full plan — including upcoming notebooks on streaming, multi-model comparison, prompt engineering, agents, RAG evaluation, and more.
