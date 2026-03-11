@@ -5,11 +5,13 @@ WORKDIR /workspace
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
 RUN pip install --upgrade pip setuptools wheel
+# Installa PyTorch CPU-only prima dei requirements per evitare i binari CUDA (~3-4 GB)
+RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --default-timeout=100 --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir jupyterlab==4.1.5
 
